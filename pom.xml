@@ -89,6 +89,7 @@
         <module>demo-spring-authorization-server</module>
         <module>demo-spring-boot-mybatis-plus-p6spy</module>
         <module>demo-spring-boot-dynamic-tp</module>
+        <module>demo-springboot-lombok</module>
     </modules>
 
     <parent>
@@ -128,6 +129,27 @@
             </plugin>
         </plugins>
     </build>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.16.8</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.12</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>1.7.25</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <repositories>
         <repository>

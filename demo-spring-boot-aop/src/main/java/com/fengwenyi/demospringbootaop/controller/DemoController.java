@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoController {
 
     @GetMapping("/hello")
-//    @LogExecutionTime(key = "#id", cacheName = "USER", needLog = true)
+//    @LogExecutionTime()
     @QueryData(key = "#id", cacheName = "USER", needLog = true)
     public String hello(String id) {
         return "Hello";
